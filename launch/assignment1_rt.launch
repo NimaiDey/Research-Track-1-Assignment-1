@@ -1,0 +1,13 @@
+<launch>
+    <!-- Start turtlesim -->
+    <node name="turtlesim" pkg="turtlesim" type="turtlesim_node" />
+
+    <!-- UI Node -->
+    <node name="ui_node" pkg="assignment1_rt" type="ui_node.py" output="screen" />
+
+    <!-- Control Node -->
+    <node name="control_turtle_node" pkg="assignment1_rt" type="control_turtle_node.py" output="screen" />
+
+    <!-- Distance Monitoring Node -->
+    <node name="distance_node" pkg="assignment1_rt" type="distance_node.py" output="screen" />
+</launch>
